@@ -20,7 +20,7 @@ Note: this has not been tested on MacOS.
     git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
     cd YOUR_REPO_NAME
     ```
-    Otherwise, ensure all project files (`dvd_logo_pyqt.py`, `pngconverter.py`, `DVD_logo.svg`, and the `generated_pngs` folder if it exists) are in the same directory.
+    Otherwise, ensure all project files (`main.py`, `pngconverter.py`, `DVD_logo.svg`, and the `generated_pngs` folder if it exists) are in the same directory.
 
 2.  **Create a Virtual Environment (Recommended):**
     ```bash
@@ -57,7 +57,7 @@ Note: this has not been tested on MacOS.
 1.  **Activate your virtual environment** (if not already active).
 2.  Run the main application:
     ```bash
-    python dvd_logo_pyqt.py
+    python main.py
     ```
 
 ### Running on a Specific Monitor
@@ -66,17 +66,17 @@ If you have multiple monitors, you can specify which one to display the logo on 
 
 * To display on the **primary monitor** (default):
     ```bash
-    python dvd_logo_pyqt.py
+    python main.py
     ```
 * To display on the **second monitor** (index `1`):
     ```bash
-    python dvd_logo_pyqt.py 1
+    python main.py 1
     ```
 * And so on for other monitors (indices `2`, `3`, etc.). The script will print the number of detected screens.
 
 ## Customization
 
-You can easily adjust the logo's size and speed by modifying the configuration variables at the top of `dvd_logo_pyqt.py`:
+You can easily adjust the logo's size and speed by modifying the configuration variables at the top of `main.py`:
 
 * **`TARGET_LOGO_WIDTH` & `TARGET_LOGO_HEIGHT`**: Change these values to make the logo larger or smaller.
 * **`INITIAL_DX` & `INITIAL_DY`**: Increase these values to make the logo move faster horizontally and vertically.
